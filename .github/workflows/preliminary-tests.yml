@@ -52,7 +52,7 @@ jobs:
       - name: Run ESLint
         run: |
           if ls **/*.js 1> /dev/null 2>&1; then
-            eslint "**/*.js" || true
+            eslint "**/*.js"
           else
             echo "No JS files found."
           fi
